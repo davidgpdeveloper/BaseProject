@@ -10,7 +10,10 @@ import UIKit
 
 class MenuVC: UIViewController {
     
-    // VARIABLES && CONSTANTS
+    // MARK: OBJECTS
+    @IBOutlet weak var tableView: UITableView!
+    
+    // MARK: VARIABLES && CONSTANTS
     var interactor: Interactor? = nil
     var menuActionDelegate: MenuActionDelegate? = nil
     let cellId = "cellId"
@@ -18,46 +21,24 @@ class MenuVC: UIViewController {
     
     let menuItems = [
         "empty",
+        "option 1",
+        "empty",
+        "option 2",
+        "option 3",
         //        setLanguage(key: "home_text"),
-        //        setLanguage(key: "transfers_text"),
-        //        setLanguage(key: "payment_text"),
-        //        setLanguage(key: "account_text"),
-        //        setLanguage(key: "fav_dest_text"),
-        //        setLanguage(key: "preferences_text"),
-        //        setLanguage(key: "messages_text"),
-        //        "empty",
-        //        setLanguage(key: "configuration_text"),
-        //        setLanguage(key: "help_text"),
-        //        "empty"
     ]
     
     let menuStoryboardViews = [
         ["empty"],
-        ["Main", "MainViewController"],
-        ["MyTrips", "MyTripsVC"],
-        ["Payment", "PaymentVC"],
-        ["MyAccount", "MyAccountVC"],
-        ["FavoritePlaces", "FavoritePlacesVC"],
-        ["Preferences", "PreferencesVC"],
-        ["Messages", "MessagesVC"],
-        ["empty"],
-        ["Configuration", "ConfigurationVC"],
-        ["Help", "HelpVC"],
-        ["empty"]
+//        ["Main", "MainViewController"],
     ]
-    
-    // OBJECTS ///
-    @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var imagePhotoProfile: UIImageView!
-    @IBOutlet weak var labelNameUser: UILabel!
-    
-    // DID LOAD ///
+
+
+    // MARK: VIEW METHODS
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //        imagePhotoProfile.setRoundImage()
     }
-    
     
     @IBAction func handleGesture(_ sender: UIPanGestureRecognizer) {
         let translation = sender.translation(in: view)
@@ -101,16 +82,12 @@ extension MenuVC : UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! MenuCell
-        
-        //        if menuItems[indexPath.row] == emptyText {
-        //            cell.labelOptionMenu.text = ""
-        //        } else {
-        //            cell.labelOptionMenu.text = menuItems[indexPath.row]
-        //
-        //            if menuStoryboardViews[indexPath.row][1] == "MessagesVC" {
-        //                cell.viewAlertCounter.isHidden = false
-        //            }
-        //        }
+
+            if menuItems[indexPath.row] == emptyText {
+                cell.labelOptionMenu.text = ""
+            } else {
+                cell.labelOptionMenu.text = menuItems[indexPath.row]
+            }
         
         return cell
     }
