@@ -12,15 +12,14 @@
 		969E193F21878AFC00413EE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 969E193D21878AFC00413EE4 /* Main.storyboard */; };
 		969E194121878AFD00413EE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 969E194021878AFD00413EE4 /* Assets.xcassets */; };
 		969E194421878AFD00413EE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 969E194221878AFD00413EE4 /* LaunchScreen.storyboard */; };
-		969E195921878C1000413EE4 /* MenuEmptyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969E194F21878C1000413EE4 /* MenuEmptyCell.swift */; };
 		969E195A21878C1000413EE4 /* DismissMenuAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969E195121878C1000413EE4 /* DismissMenuAnimator.swift */; };
 		969E195B21878C1000413EE4 /* PresentMenuAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969E195221878C1000413EE4 /* PresentMenuAnimator.swift */; };
-		969E195C21878C1000413EE4 /* MenuCustomVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969E195321878C1000413EE4 /* MenuCustomVC.swift */; };
-		969E195D21878C1000413EE4 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969E195421878C1000413EE4 /* MenuCell.swift */; };
 		969E195E21878C1000413EE4 /* MenuHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969E195621878C1000413EE4 /* MenuHelper.swift */; };
 		969E195F21878C1000413EE4 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969E195721878C1000413EE4 /* Interactor.swift */; };
 		969E196021878C1000413EE4 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969E195821878C1000413EE4 /* MenuViewController.swift */; };
-		969E196221878EEB00413EE4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969E196121878EEB00413EE4 /* MainViewController.swift */; };
+		96E5DAC6218798C600A48522 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E5DAC5218798C500A48522 /* MenuCell.swift */; };
+		96E5DACA21879C0E00A48522 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E5DAC921879C0E00A48522 /* MainVC.swift */; };
+		96E5DACC21879D0D00A48522 /* MenuActionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E5DACB21879D0D00A48522 /* MenuActionsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,15 +30,14 @@
 		969E194021878AFD00413EE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		969E194321878AFD00413EE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		969E194521878AFD00413EE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		969E194F21878C1000413EE4 /* MenuEmptyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuEmptyCell.swift; sourceTree = "<group>"; };
 		969E195121878C1000413EE4 /* DismissMenuAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DismissMenuAnimator.swift; sourceTree = "<group>"; };
 		969E195221878C1000413EE4 /* PresentMenuAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentMenuAnimator.swift; sourceTree = "<group>"; };
-		969E195321878C1000413EE4 /* MenuCustomVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCustomVC.swift; sourceTree = "<group>"; };
-		969E195421878C1000413EE4 /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		969E195621878C1000413EE4 /* MenuHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuHelper.swift; sourceTree = "<group>"; };
 		969E195721878C1000413EE4 /* Interactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
 		969E195821878C1000413EE4 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
-		969E196121878EEB00413EE4 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		96E5DAC5218798C500A48522 /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		96E5DAC921879C0E00A48522 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		96E5DACB21879D0D00A48522 /* MenuActionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuActionsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +91,7 @@
 		969E194C21878B5900413EE4 /* Main View */ = {
 			isa = PBXGroup;
 			children = (
-				969E196121878EEB00413EE4 /* MainViewController.swift */,
+				96E5DAC921879C0E00A48522 /* MainVC.swift */,
 				969E193B21878AFC00413EE4 /* ViewController.swift */,
 				969E193D21878AFC00413EE4 /* Main.storyboard */,
 				969E194E21878C1000413EE4 /* Menu Files */,
@@ -111,12 +109,11 @@
 		969E194E21878C1000413EE4 /* Menu Files */ = {
 			isa = PBXGroup;
 			children = (
-				969E195421878C1000413EE4 /* MenuCell.swift */,
-				969E195321878C1000413EE4 /* MenuCustomVC.swift */,
-				969E194F21878C1000413EE4 /* MenuEmptyCell.swift */,
 				969E195821878C1000413EE4 /* MenuViewController.swift */,
+				96E5DAC5218798C500A48522 /* MenuCell.swift */,
 				969E195021878C1000413EE4 /* Animators */,
 				969E195521878C1000413EE4 /* Helpers */,
+				96E5DACB21879D0D00A48522 /* MenuActionsVC.swift */,
 			);
 			path = "Menu Files";
 			sourceTree = "<group>";
@@ -211,13 +208,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				969E195E21878C1000413EE4 /* MenuHelper.swift in Sources */,
-				969E196221878EEB00413EE4 /* MainViewController.swift in Sources */,
 				969E196021878C1000413EE4 /* MenuViewController.swift in Sources */,
-				969E195D21878C1000413EE4 /* MenuCell.swift in Sources */,
 				969E195A21878C1000413EE4 /* DismissMenuAnimator.swift in Sources */,
+				96E5DACA21879C0E00A48522 /* MainVC.swift in Sources */,
+				96E5DACC21879D0D00A48522 /* MenuActionsVC.swift in Sources */,
 				969E195F21878C1000413EE4 /* Interactor.swift in Sources */,
-				969E195921878C1000413EE4 /* MenuEmptyCell.swift in Sources */,
-				969E195C21878C1000413EE4 /* MenuCustomVC.swift in Sources */,
+				96E5DAC6218798C600A48522 /* MenuCell.swift in Sources */,
 				969E193C21878AFC00413EE4 /* ViewController.swift in Sources */,
 				969E195B21878C1000413EE4 /* PresentMenuAnimator.swift in Sources */,
 				969E193A21878AFC00413EE4 /* AppDelegate.swift in Sources */,

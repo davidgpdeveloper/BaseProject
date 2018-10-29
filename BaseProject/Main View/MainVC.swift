@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainVC.swift
 //  BaseProject
 //
 //  Created by David Galán on 29/10/2018.
@@ -8,12 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
-    // MARK: OBJECTS
+class MainVC: MenuActionsVC {
     
-    // MARK: VARIABLES & CONSTANTS
-    let segueId = "goToMainView"
+    // MARK: OBJECTS
+    @IBOutlet weak var buttonMenu: UIButton!
+    @IBAction func buttonMenuAction(_ sender: UIButton) {
+        self.performSegue(withIdentifier: openMenuId, sender: nil)
+    }
     
     // MARK: VIEW METHODS
     override func viewDidLoad() {
@@ -26,18 +27,11 @@ class ViewController: UIViewController {
         populateTexts()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        sleep(1)
-        
-        self.performSegue(withIdentifier: segueId, sender: nil)
-    }
-    
     // MARK: OTHER METHODS
     private func populateTexts() {
         
     }
-
-
+    
+    
 }
 

@@ -13,7 +13,7 @@ class MenuViewController : UIViewController {
     // VARIABLES && CONSTANTS
     var interactor: Interactor? = nil
     var menuActionDelegate: MenuActionDelegate? = nil
-    let cellTopId = "topMenuCell"
+    let cellId = "cellId"
     let emptyText = "empty"
     
     let menuItems = [
@@ -100,7 +100,7 @@ extension MenuViewController : UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellTopId, for: indexPath) as! MenuCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! MenuCell
         
 //        if menuItems[indexPath.row] == emptyText {
 //            cell.labelOptionMenu.text = ""

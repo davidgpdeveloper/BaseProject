@@ -1,8 +1,8 @@
 //
-//  MenuCustomVC.swift
-//  trasladiaUser
+//  MenuActionsVC.swift
+//  BaseProject
 //
-//  Created by David Galán on 08/10/2018.
+//  Created by David Galán on 29/10/2018.
 //  Copyright © 2018 David Galán. All rights reserved.
 //
 
@@ -17,11 +17,11 @@ protocol MenuActionDelegate {
 
 let openMenuId = "openMenu"
 
-class MenuCustomVC: UIViewController {
+class MenuActionsVC: UIViewController {
     
     // VARIABLES && CONSTANTS ///
     let interactor = Interactor()
-        
+    
     
     // PAN GESTURE ///
     @IBAction func edgePanGesture(_ sender: UIScreenEdgePanGestureRecognizer) {
@@ -33,9 +33,9 @@ class MenuCustomVC: UIViewController {
             sender.state,
             progress: progress,
             interactor: interactor){
-//                if canPerformSegue(withIdentifier: openMenuId) {
-                    self.performSegue(withIdentifier: openMenuId, sender: nil)
-//                }
+                //                if canPerformSegue(withIdentifier: openMenuId) {
+                self.performSegue(withIdentifier: openMenuId, sender: nil)
+                //                }
         }
     }
     
@@ -49,7 +49,7 @@ class MenuCustomVC: UIViewController {
     }
 }
 
-extension MenuCustomVC: UIViewControllerTransitioningDelegate {
+extension MenuActionsVC: UIViewControllerTransitioningDelegate {
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         return PresentMenuAnimator()
     }
@@ -68,7 +68,7 @@ extension MenuCustomVC: UIViewControllerTransitioningDelegate {
 }
 
 
-extension MenuCustomVC : MenuActionDelegate {
+extension MenuActionsVC : MenuActionDelegate {
     
     func hideMenu() {
         DispatchQueue.main.async {
@@ -90,15 +90,16 @@ extension MenuCustomVC : MenuActionDelegate {
     
     func openSegue(_ segueName: String, sender: AnyObject?) {
         dismiss(animated: true) {
-//            if self.canPerformSegue(withIdentifier: segueName) {
-                self.performSegue(withIdentifier: segueName, sender: sender)
-//            }
+            //            if self.canPerformSegue(withIdentifier: segueName) {
+            self.performSegue(withIdentifier: segueName, sender: sender)
+            //            }
         }
     }
     
     func reopenMenu() {
-//        if canPerformSegue(withIdentifier: openMenuId) {
-            performSegue(withIdentifier: openMenuId, sender: nil)
-//        }
+        //        if canPerformSegue(withIdentifier: openMenuId) {
+        performSegue(withIdentifier: openMenuId, sender: nil)
+        //        }
     }
 }
+

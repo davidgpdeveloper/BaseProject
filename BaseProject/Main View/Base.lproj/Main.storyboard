@@ -33,7 +33,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="cS2-Nm-6aC"/>
                     <connections>
-                        <segue destination="zJ3-sZ-PQA" kind="show" identifier="goToMain" id="ac8-Bz-xin"/>
+                        <segue destination="zJ3-sZ-PQA" kind="show" identifier="goToMainView" id="ac8-Bz-xin"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -43,7 +43,7 @@
         <!--Menu View Controller-->
         <scene sceneID="nna-JP-X9q">
             <objects>
-                <viewController storyboardIdentifier="MenuViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fTV-YY-ALt" customClass="MenuViewController" customModule="trasladiaUser" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MenuViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fTV-YY-ALt" customClass="MenuViewController" customModule="BaseProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yaP-UT-dMk"/>
                         <viewControllerLayoutGuide type="bottom" id="qbP-Zv-Y3D"/>
@@ -103,10 +103,10 @@
             </objects>
             <point key="canvasLocation" x="-318" y="250"/>
         </scene>
-        <!--Main View Controller-->
+        <!--MainVC-->
         <scene sceneID="Cd9-1h-vi3">
             <objects>
-                <viewController storyboardIdentifier="MainViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zJ3-sZ-PQA" customClass="MainViewController" customModule="trasladiaUser" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zJ3-sZ-PQA" customClass="MainVC" customModule="BaseProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wg3-2H-0Ks"/>
                         <viewControllerLayoutGuide type="bottom" id="Vlq-WD-R05"/>

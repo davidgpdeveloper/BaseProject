@@ -11,14 +11,6 @@ import UIKit
 class MenuCell: UITableViewCell {
 
     @IBOutlet weak var labelOptionMenu: UILabel!
-    @IBOutlet weak var viewAlertCounter: UIView! {
-        didSet {
-            viewAlertCounter.layer.cornerRadius = 10
-            viewAlertCounter.isHidden = true
-        }
-    }
-    @IBOutlet weak var labelCounter: UILabel!
-    
     
     override func awakeFromNib() {
         super.awakeFromNib()
