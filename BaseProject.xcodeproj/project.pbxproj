@@ -20,6 +20,7 @@
 		96E5DAC6218798C600A48522 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E5DAC5218798C500A48522 /* MenuCell.swift */; };
 		96E5DACA21879C0E00A48522 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E5DAC921879C0E00A48522 /* MainVC.swift */; };
 		96E5DACC21879D0D00A48522 /* MenuActionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E5DACB21879D0D00A48522 /* MenuActionsVC.swift */; };
+		96E5DACE21879DB400A48522 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E5DACD21879DB400A48522 /* MenuVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		96E5DAC5218798C500A48522 /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		96E5DAC921879C0E00A48522 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		96E5DACB21879D0D00A48522 /* MenuActionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuActionsVC.swift; sourceTree = "<group>"; };
+		96E5DACD21879DB400A48522 /* MenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,11 +111,12 @@
 		969E194E21878C1000413EE4 /* Menu Files */ = {
 			isa = PBXGroup;
 			children = (
-				969E195821878C1000413EE4 /* MenuViewController.swift */,
+				96E5DACB21879D0D00A48522 /* MenuActionsVC.swift */,
 				96E5DAC5218798C500A48522 /* MenuCell.swift */,
+				969E195821878C1000413EE4 /* MenuViewController.swift */,
 				969E195021878C1000413EE4 /* Animators */,
 				969E195521878C1000413EE4 /* Helpers */,
-				96E5DACB21879D0D00A48522 /* MenuActionsVC.swift */,
+				96E5DACD21879DB400A48522 /* MenuVC.swift */,
 			);
 			path = "Menu Files";
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 				96E5DACA21879C0E00A48522 /* MainVC.swift in Sources */,
 				96E5DACC21879D0D00A48522 /* MenuActionsVC.swift in Sources */,
 				969E195F21878C1000413EE4 /* Interactor.swift in Sources */,
+				96E5DACE21879DB400A48522 /* MenuVC.swift in Sources */,
 				96E5DAC6218798C600A48522 /* MenuCell.swift in Sources */,
 				969E193C21878AFC00413EE4 /* ViewController.swift in Sources */,
 				969E195B21878C1000413EE4 /* PresentMenuAnimator.swift in Sources */,

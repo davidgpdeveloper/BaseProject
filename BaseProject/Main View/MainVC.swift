@@ -13,7 +13,7 @@ class MainVC: MenuActionsVC {
     // MARK: OBJECTS
     @IBOutlet weak var buttonMenu: UIButton!
     @IBAction func buttonMenuAction(_ sender: UIButton) {
-        self.performSegue(withIdentifier: openMenuId, sender: nil)
+        self.performSegue(withIdentifier: segueMenuId, sender: nil)
     }
     
     // MARK: VIEW METHODS

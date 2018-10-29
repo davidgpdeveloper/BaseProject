@@ -15,7 +15,7 @@ protocol MenuActionDelegate {
     func hideMenu()
 }
 
-let openMenuId = "openMenu"
+let segueMenuId = "openMenu"
 
 class MenuActionsVC: UIViewController {
     
@@ -34,14 +34,14 @@ class MenuActionsVC: UIViewController {
             progress: progress,
             interactor: interactor){
                 //                if canPerformSegue(withIdentifier: openMenuId) {
-                self.performSegue(withIdentifier: openMenuId, sender: nil)
+                self.performSegue(withIdentifier: segueMenuId, sender: nil)
                 //                }
         }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
-        if let destinationViewController = segue.destination as? MenuViewController {
+        if let destinationViewController = segue.destination as? MenuVC {
             destinationViewController.transitioningDelegate = self
             destinationViewController.interactor = interactor
             destinationViewController.menuActionDelegate = self /*as? MenuActionDelegate*/
@@ -98,7 +98,7 @@ extension MenuActionsVC : MenuActionDelegate {
     
     func reopenMenu() {
         //        if canPerformSegue(withIdentifier: openMenuId) {
-        performSegue(withIdentifier: openMenuId, sender: nil)
+        performSegue(withIdentifier: segueMenuId, sender: nil)
         //        }
     }
 }

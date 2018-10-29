@@ -40,10 +40,10 @@
             </objects>
             <point key="canvasLocation" x="532" y="-540"/>
         </scene>
-        <!--Menu View Controller-->
+        <!--MenuVC-->
         <scene sceneID="nna-JP-X9q">
             <objects>
-                <viewController storyboardIdentifier="MenuViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fTV-YY-ALt" customClass="MenuViewController" customModule="BaseProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MenuVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fTV-YY-ALt" customClass="MenuVC" customModule="BaseProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yaP-UT-dMk"/>
                         <viewControllerLayoutGuide type="bottom" id="qbP-Zv-Y3D"/>
@@ -57,8 +57,8 @@
                                 <color key="backgroundColor" red="0.99626868960000003" green="0.42866683010000001" blue="0.38428041340000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <gestureRecognizers/>
                                 <connections>
-                                    <action selector="closeMenu:" destination="fTV-YY-ALt" eventType="touchUpInside" id="LdE-YR-5QP"/>
-                                    <outletCollection property="gestureRecognizers" destination="e7R-0p-PRt" appends="YES" id="J6a-4L-NnN"/>
+                                    <action selector="closeMenu:" destination="fTV-YY-ALt" eventType="touchUpInside" id="MbX-V7-TLu"/>
+                                    <outletCollection property="gestureRecognizers" destination="v1O-Mv-haZ" appends="YES" id="e83-iL-byN"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UUt-mw-QlK">
@@ -95,9 +95,9 @@
                     <navigationItem key="navigationItem" id="9Zq-z8-N4J"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GQt-Ng-qqb" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <panGestureRecognizer minimumNumberOfTouches="1" id="e7R-0p-PRt">
+                <panGestureRecognizer minimumNumberOfTouches="1" id="v1O-Mv-haZ">
                     <connections>
-                        <action selector="handleGesture:" destination="fTV-YY-ALt" id="Sol-hu-Cvd"/>
+                        <action selector="handleGesture:" destination="fTV-YY-ALt" id="oj8-tn-kN6"/>
                     </connections>
                 </panGestureRecognizer>
             </objects>
@@ -171,7 +171,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="buttonMenu" destination="EDK-4u-OzU" id="xFc-6j-die"/>
-                        <segue destination="fTV-YY-ALt" kind="presentation" identifier="openMenu" id="ZE3-TO-2RC"/>
+                        <segue destination="fTV-YY-ALt" kind="presentation" identifier="openMenu" id="qfc-gJ-v1O"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LDp-OM-dbr" sceneMemberID="firstResponder"/>
