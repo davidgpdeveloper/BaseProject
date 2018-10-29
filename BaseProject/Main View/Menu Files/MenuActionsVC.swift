@@ -19,7 +19,7 @@ let segueMenuId = "openMenu"
 
 class MenuActionsVC: UIViewController {
     
-    // VARIABLES && CONSTANTS ///
+    // MARK: VARIABLES && CONSTANTS
     let interactor = Interactor()
     
     

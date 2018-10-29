@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		966CE3162187A4CF00226561 /* AlertTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966CE3152187A4CF00226561 /* AlertTools.swift */; };
+		966CE3182187A4E900226561 /* AnimationsTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966CE3172187A4E900226561 /* AnimationsTools.swift */; };
+		966CE31A2187A52F00226561 /* NavigationViewTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966CE3192187A52F00226561 /* NavigationViewTools.swift */; };
+		966CE31C2187A5B200226561 /* GestureRecognizerTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966CE31B2187A5B200226561 /* GestureRecognizerTools.swift */; };
+		966CE31E2187A5CC00226561 /* ImageTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966CE31D2187A5CC00226561 /* ImageTools.swift */; };
+		966CE3212187A5E700226561 /* LanguageTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966CE3202187A5E700226561 /* LanguageTools.swift */; };
+		966CE3232187A65300226561 /* PermissionTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966CE3222187A65300226561 /* PermissionTools.swift */; };
+		966CE3252187A66F00226561 /* SwiftNotice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966CE3242187A66F00226561 /* SwiftNotice.swift */; };
+		966CE3272187A68E00226561 /* TextFieldObservers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966CE3262187A68E00226561 /* TextFieldObservers.swift */; };
+		966CE3292187A6C000226561 /* ValidateStringTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966CE3282187A6C000226561 /* ValidateStringTools.swift */; };
 		969E193A21878AFC00413EE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969E193921878AFC00413EE4 /* AppDelegate.swift */; };
 		969E193C21878AFC00413EE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969E193B21878AFC00413EE4 /* ViewController.swift */; };
 		969E193F21878AFC00413EE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 969E193D21878AFC00413EE4 /* Main.storyboard */; };
@@ -23,6 +33,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		966CE3152187A4CF00226561 /* AlertTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertTools.swift; sourceTree = "<group>"; };
+		966CE3172187A4E900226561 /* AnimationsTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsTools.swift; sourceTree = "<group>"; };
+		966CE3192187A52F00226561 /* NavigationViewTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewTools.swift; sourceTree = "<group>"; };
+		966CE31B2187A5B200226561 /* GestureRecognizerTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureRecognizerTools.swift; sourceTree = "<group>"; };
+		966CE31D2187A5CC00226561 /* ImageTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTools.swift; sourceTree = "<group>"; };
+		966CE3202187A5E700226561 /* LanguageTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageTools.swift; sourceTree = "<group>"; };
+		966CE3222187A65300226561 /* PermissionTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionTools.swift; sourceTree = "<group>"; };
+		966CE3242187A66F00226561 /* SwiftNotice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftNotice.swift; sourceTree = "<group>"; };
+		966CE3262187A68E00226561 /* TextFieldObservers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldObservers.swift; sourceTree = "<group>"; };
+		966CE3282187A6C000226561 /* ValidateStringTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateStringTools.swift; sourceTree = "<group>"; };
 		969E193621878AFC00413EE4 /* BaseProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		969E193921878AFC00413EE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		969E193B21878AFC00413EE4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +122,16 @@
 		969E194D21878B6D00413EE4 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				966CE3152187A4CF00226561 /* AlertTools.swift */,
+				966CE3172187A4E900226561 /* AnimationsTools.swift */,
+				966CE31B2187A5B200226561 /* GestureRecognizerTools.swift */,
+				966CE31D2187A5CC00226561 /* ImageTools.swift */,
+				966CE3202187A5E700226561 /* LanguageTools.swift */,
+				966CE3192187A52F00226561 /* NavigationViewTools.swift */,
+				966CE3222187A65300226561 /* PermissionTools.swift */,
+				966CE3242187A66F00226561 /* SwiftNotice.swift */,
+				966CE3262187A68E00226561 /* TextFieldObservers.swift */,
+				966CE3282187A6C000226561 /* ValidateStringTools.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -210,13 +240,23 @@
 				969E195E21878C1000413EE4 /* MenuHelper.swift in Sources */,
 				969E195A21878C1000413EE4 /* DismissMenuAnimator.swift in Sources */,
 				96E5DACA21879C0E00A48522 /* MainVC.swift in Sources */,
+				966CE3212187A5E700226561 /* LanguageTools.swift in Sources */,
 				96E5DACC21879D0D00A48522 /* MenuActionsVC.swift in Sources */,
+				966CE3232187A65300226561 /* PermissionTools.swift in Sources */,
+				966CE3292187A6C000226561 /* ValidateStringTools.swift in Sources */,
+				966CE31A2187A52F00226561 /* NavigationViewTools.swift in Sources */,
+				966CE3182187A4E900226561 /* AnimationsTools.swift in Sources */,
 				969E195F21878C1000413EE4 /* Interactor.swift in Sources */,
+				966CE31E2187A5CC00226561 /* ImageTools.swift in Sources */,
 				96E5DACE21879DB400A48522 /* MenuVC.swift in Sources */,
 				96E5DAC6218798C600A48522 /* MenuCell.swift in Sources */,
 				969E193C21878AFC00413EE4 /* ViewController.swift in Sources */,
 				969E195B21878C1000413EE4 /* PresentMenuAnimator.swift in Sources */,
 				969E193A21878AFC00413EE4 /* AppDelegate.swift in Sources */,
+				966CE3272187A68E00226561 /* TextFieldObservers.swift in Sources */,
+				966CE3252187A66F00226561 /* SwiftNotice.swift in Sources */,
+				966CE3162187A4CF00226561 /* AlertTools.swift in Sources */,
+				966CE31C2187A5B200226561 /* GestureRecognizerTools.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
