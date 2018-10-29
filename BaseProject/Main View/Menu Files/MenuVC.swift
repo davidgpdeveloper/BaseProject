@@ -8,6 +8,8 @@
 
 import UIKit
 
+var viewPosition = "MainVC"
+
 class MenuVC: UIViewController {
     
     // MARK: OBJECTS
@@ -20,18 +22,20 @@ class MenuVC: UIViewController {
     let emptyText = "empty"
     
     let menuItems = [
-        "empty",
-        "option 1",
-        "empty",
-        "option 2",
-        "option 3",
-        //        setLanguage(key: "home_text"),
+        // name, storyboard, storyboardID
+        ["empty", "empty", "empty"],
+        ["option 1", "empty", "empty"],
+        ["empty", "empty", "empty"],
+        ["option 2", "empty", "empty"],
+        ["option 3", "empty", "empty"],
+//        [setLanguage(key: "home_text"), "empty", "empty"],
+
     ]
     
-    let menuStoryboardViews = [
-        ["empty"],
-//        ["Main", "MainViewController"],
-    ]
+//    let menuStoryboardViews = [
+//        ["empty"],
+////        ["Main", "MainViewController"],
+//    ]
 
 
     // MARK: VIEW METHODS
@@ -83,10 +87,10 @@ extension MenuVC : UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! MenuCell
 
-            if menuItems[indexPath.row] == emptyText {
+            if menuItems[indexPath.row][0] == emptyText {
                 cell.labelOptionMenu.text = ""
             } else {
-                cell.labelOptionMenu.text = menuItems[indexPath.row]
+                cell.labelOptionMenu.text = menuItems[indexPath.row][0]
             }
         
         return cell
@@ -96,17 +100,19 @@ extension MenuVC : UITableViewDataSource {
 extension MenuVC : UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didHighlightRowAt indexPath: IndexPath) {
+
+        print("item: \(indexPath.row)")
         
-        //        if menuStoryboardViews[indexPath.row][0] != emptyText {
-        //            let tempViewPosition = menuStoryboardViews[indexPath.row][0] + menuStoryboardViews[indexPath.row][1]
-        //
-        //            if tempViewPosition != viewPosition {
-        //                viewPosition = tempViewPosition
-        //                menuActionDelegate?.goToNewView(storyboardName: menuStoryboardViews[indexPath.row][0], viewIdentifier: menuStoryboardViews[indexPath.row][1])
-        //            } else {
-        //                menuActionDelegate?.hideMenu()
-        //            }
-        //        }
+        if menuItems[indexPath.row][1] != emptyText {
+            let tempViewPosition = menuItems[indexPath.row][1] + menuItems[indexPath.row][2]
+
+            if tempViewPosition != viewPosition {
+                viewPosition = tempViewPosition
+                menuActionDelegate?.goToNewView(storyboardName: menuItems[indexPath.row][1], viewIdentifier: menuItems[indexPath.row][2])
+            } else {
+                menuActionDelegate?.hideMenu()
+            }
+        }
     }
     
     

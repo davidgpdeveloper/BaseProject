@@ -33,9 +33,9 @@ class MenuActionsVC: UIViewController {
             sender.state,
             progress: progress,
             interactor: interactor){
-                //                if canPerformSegue(withIdentifier: openMenuId) {
+            if canPerformSegue(withIdentifier: segueMenuId) {
                 self.performSegue(withIdentifier: segueMenuId, sender: nil)
-                //                }
+            }
         }
     }
     
@@ -90,16 +90,16 @@ extension MenuActionsVC : MenuActionDelegate {
     
     func openSegue(_ segueName: String, sender: AnyObject?) {
         dismiss(animated: true) {
-            //            if self.canPerformSegue(withIdentifier: segueName) {
-            self.performSegue(withIdentifier: segueName, sender: sender)
-            //            }
+            if self.canPerformSegue(withIdentifier: segueName) {
+                self.performSegue(withIdentifier: segueName, sender: sender)
+            }
         }
     }
     
     func reopenMenu() {
-        //        if canPerformSegue(withIdentifier: openMenuId) {
-        performSegue(withIdentifier: segueMenuId, sender: nil)
-        //        }
+        if canPerformSegue(withIdentifier: segueMenuId) {
+            performSegue(withIdentifier: segueMenuId, sender: nil)
+        }
     }
 }
 
